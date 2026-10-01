@@ -1,0 +1,90 @@
+---
+title: "Orders"
+description: "Every order you can give, what RHEA does on her own, and the alerts you get."
+icon: "list-check"
+---
+
+You run your planet. RHEA, the game's AI, carries out your orders, including while the app is closed. She also defends your planet for you.
+
+RHEA holds your planet's game key. So game orders never open your wallet and never cost you SOL. Your wallet signs only the money matters listed under [wallet orders](#wallet-orders). When you're new, her first orders walk you through the game: see the [Quickstart](/quickstart).
+
+## Free orders
+
+Anyone can give these. Some cost dust.
+
+| Order | Where | Notes |
+|---|---|---|
+| Claim a planet | First run | One per wallet. Pick a quadrant and a name. |
+| Upgrade the Dust Reactor or the Bastion (defence) | Planet deck | Costs dust. One build at a time. See [Upgrades](/planet/upgrades). |
+| Train troops | Hangar | Costs dust. One batch at a time. See [Fleet](/war/fleet). |
+| Raid or Assault a rival world | Galaxy chart | No dust. Leaves about 90 seconds after you order. See [Raids](/war/raids). |
+| Reinforce a coalition-mate | Galaxy chart | The host pays their upkeep once they land. See [Coalitions](/war/coalitions). |
+| Start a coalition, ask to join, withdraw a request, approve, remove a member, leave | Coalition deck | Starting one needs production level 5. |
+| Start or restart the simulation pack | Mine | 7 days of dust. See [Dust](/planet/dust). |
+| Collect | Dust screen, from Settings | Moves tank dust into your balance. |
+| Clear it (your debt) | Planet deck | Once you're back above zero. |
+| Finish now · 1 fast-track | Planet deck or Supply Drop | Spends one Fast-track token. |
+
+Orders with a price show a quote that's valid for 2 minutes. You can give up to 6 orders a minute.
+
+## Premium orders
+
+These need [premium](/ore/premium).
+
+| Order | Where | Notes |
+|---|---|---|
+| Burn dust | Weekly prize | Tank first, then balance. See [Weekly prize](/ore/weekly-prize). |
+| Auto queue | Queue | Line up training and upgrades. |
+| Campaign planner | Campaign | Strikes where several fleets land together. See [Coalitions](/war/coalitions). |
+
+### The auto queue
+
+Line up to 10 orders: training batches, Dust Reactor upgrades and Bastion upgrades. RHEA works through them in order, about once a minute, even with the app closed.
+
+- If an order can't run yet, because you're short of dust, a batch is still training, a build is still running, or you're in debt, it waits its turn. It doesn't fail.
+- If an order is refused for any other reason, it fails, and RHEA moves on to the next one.
+- If premium ends, the queue pauses. Your orders stay in it and pick up again when you renew.
+
+## Wallet orders
+
+Your wallet signs these, because money moves or your payout wallet is involved. See [What you sign](/wallet/what-you-sign).
+
+| Order | Paid in |
+|---|---|
+| **Go premium** or **Add thirty days** | 20 USDC |
+| **Buy small pack** or **Buy big pack** (needs premium, or buy both together) | 20 or 200 USDC |
+| **Roll ×1** or **Roll ×10** on a Supply Drop | 20 SKR a drop, free drops first |
+| **Take out ORE** | Nothing |
+| Claim a weekly prize, or **Confirm my payout wallet** | Nothing |
+
+When PANDOR covers the network fee, the app tells you: "PANDOR covers the network fee on this one, Commander."
+
+## What RHEA does on her own
+
+These run all the time, for free, whether or not the app is open. She checks about once a minute, and every 15 seconds while a battle is close.
+
+- **Defends your planet** with every troop at home. See [Defending](/war/raids#defending).
+- **Reveals your armies** when they land, and brings your survivors and their loot home.
+- **Finishes your training and upgrades** the moment they're ready.
+- **Takes in reinforcements** that coalition-mates send you.
+- **Credits your pack's dust** to your tank, about once an hour.
+- **Collects your tank** as the first step of any order that spends dust.
+- **Clears your debt flag** once your balance is back above zero.
+
+She won't, on her own:
+
+- restart your simulation pack when it ends;
+- collect your tank on a timer;
+- train, build or attack without your order. The auto queue and the campaign planner are your orders, given ahead of time.
+
+## Notifications
+
+| Alert | Example | Opens |
+|---|---|---|
+| **Incoming attack** | "From *their world*, landing on *your world* in 3 min." | War Room |
+| **Upgrade done** | "Dust Reactor is at level 3." | Planet deck |
+| **Training done** | "10 troops built. They fold into your garrison next." | Planet deck |
+
+- An attack alert goes out at once, on the Android channel "Incoming attacks". Upgrade and training alerts use the channel "Upgrades and training". There are no other switches, so to silence one kind, turn its channel off in Android settings.
+- Each alert is sent once. An alert running more than 15 minutes late is dropped, and so is an attack alert once the attack has landed.
+- Check Settings to see which alerts you get. It says either "On. I ping you for upgrades, training and inbound attacks." or "On for upgrades and training. Attack alerts aren't live yet."

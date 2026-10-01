@@ -1,0 +1,79 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "PANDOR",
+  "description": "Run your planet. Mine real ORE. The player guide to PANDOR, a real-time space strategy game for the Solana Seeker.",
+  "colors": {
+    "primary": "#2E7C8C",
+    "light": "#56D9EB",
+    "dark": "#2E7C8C"
+  },
+  "appearance": {
+    "default": "dark"
+  },
+  "background": {
+    "color": {
+      "dark": "#060909"
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Silkscreen"
+    }
+  },
+  "logo": {
+    "light": "/logo/pandor-logo-light-bg.svg",
+    "dark": "/logo/pandor-logo-dark-bg.svg",
+    "href": "https://pandor.gg"
+  },
+  "favicon": "/favicon.png",
+  "seo": {
+    "metatags": {
+      "og:image": "https://pandor.gg/og.png?v=4"
+    }
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Get started",
+        "pages": ["index", "quickstart", "seeker-genesis"]
+      },
+      {
+        "group": "Your planet",
+        "pages": ["planet/planets", "planet/upgrades", "planet/dust", "planet/orders"]
+      },
+      {
+        "group": "Fleet and war",
+        "pages": ["war/fleet", "war/raids", "war/coalitions"]
+      },
+      {
+        "group": "ORE and rewards",
+        "pages": ["ore/mining", "ore/weekly-prize", "ore/supply-drops", "ore/premium", "ore/referrals"]
+      },
+      {
+        "group": "Your wallet",
+        "pages": ["wallet/what-you-sign", "wallet/faq"]
+      }
+    ]
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "pandor.gg",
+        "href": "https://pandor.gg"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Follow @playpandor",
+      "href": "https://x.com/playpandor"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/playpandor",
+      "discord": "https://discord.gg/jZ3xnA6szD",
+      "github": "https://github.com/apawitan1995/project-rhea"
+    }
+  }
+}

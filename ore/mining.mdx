@@ -1,0 +1,87 @@
+---
+title: "Mining"
+description: "The free simulation pack, real mining packs, pORE, and taking out ORE."
+icon: "gem"
+---
+
+Packs are how your planet earns over time. The free simulation pack pays dust. Real mining packs pay dust too, and earn pORE that you can take out as ORE.
+
+| | Simulation pack | Small pack | Big pack |
+|---|---|---|---|
+| Price | Free | 20 USDC | 200 USDC |
+| Needs premium | No | Yes | Yes |
+| Runs for | 7 days | 7 days | 7 days |
+| Pays | Dust only | Dust and pORE | Dust and pORE, from 10 times the SOL |
+
+<Note>
+With no pack running, your planet makes no dust over time. Keep the free simulation pack going.
+</Note>
+
+## The free simulation pack
+
+Under **Mine**, tap **Start simulation pack**. There's nothing to pay or sign: RHEA runs it with your planet's game key.
+
+It runs for seven days and pays **dust only, never ORE or pORE**, at your planet's normal production rate:
+
+> dust per minute = 50 × production level × species bonus × rarity bonus, rounded down
+
+The species bonus is 1.25 for Terra and 1 for the others. The rarity bonus is 1 for Common, 1.05 for Rare and 1.10 for Legendary.
+
+| Dust per minute | Level 1 | Level 5 | Level 10 | Level 20 |
+|---|---:|---:|---:|---:|
+| Common | 50 | 250 | 500 | 1,000 |
+| Rare | 52 | 262 | 525 | 1,050 |
+| Legendary | 55 | 275 | 550 | 1,100 |
+| Terra, Common | 62 | 312 | 625 | 1,250 |
+| Terra, Rare | 65 | 328 | 656 | 1,312 |
+| Terra, Legendary | 68 | 343 | 687 | 1,375 |
+
+The first three rows are for Ferox, Vex and Bastion. An hour is 60 times as much: 3,000 dust for a Common planet at level 1. To raise your level, see [Upgrades](/planet/upgrades).
+
+You run one simulation pack at a time. When it ends, tap **Restart simulation pack** for another seven days. It never restarts on its own.
+
+The screen also shows **SOL it plays as** and **pORE it would have mined**: a preview of what a real small pack would have mined. The simulation pack never pays it out.
+
+## Real mining packs
+
+Real packs mine through **RubyPool's Perpetua**, an ORE mining pool on Solana. RubyPool mines the ORE, and your position earns **pORE**, RubyPool's token, which you can take out as ORE.
+
+To buy a pack, your planet needs live [premium](/ore/premium), and your [payout wallet](/wallet/what-you-sign#your-payout-wallet) pays in USDC, with one approval. You can buy premium and a small pack together.
+
+| Where the price goes | Share | Small pack | Big pack |
+|---|---:|---:|---:|
+| Swapped to SOL that mines for you | 80% | 16 USDC | 160 USDC |
+| PANDOR treasury | 10% | 2 USDC | 20 USDC |
+| PANDOR's bonus wallet | 10% | 2 USDC | 20 USDC |
+
+The swap happens on chain at the market price, and the SOL lands in your own wallet.
+
+<Warning>
+Keep a little SOL in your wallet. Your first pack opens your RubyPool accounts, which take a deposit of about 0.004 SOL. It comes back when those accounts close. A wallet with no SOL can't buy a pack yet.
+</Warning>
+
+### Your SOL goes in over seven days
+
+The SOL then goes into your own RubyPool position in equal steps over seven days, so it mines all week. The number of steps depends on the SOL price. The app shows **N of M steps in** and **All in by**.
+
+<Note>
+Example only, from 30 September 2026, with SOL at about 118 USDC: a small pack went in as 84 steps, one every 2 hours. A big pack went in as 672 steps, one every 15 minutes.
+</Note>
+
+The SOL is used up by mining. You don't get SOL back: you get pORE.
+
+### What a real pack earns
+
+- **pORE, in your wallet's name.** Your position belongs to your payout wallet, and only that wallet can take out what it earns.
+- **Dust from pORE.** 1,900,000 dust for each ORE's worth of pORE your packs mine, plus 10% for each production level above 1.
+- **The base rate.** While a real pack runs, your planet makes the same dust per minute as the simulation pack. You never get two base rates at once.
+
+## Take out ORE
+
+Under **Mine**, tap **Take out ORE**, choose an amount or **Everything**, and approve once in your wallet.
+
+- You get **88.75% of your pORE's ORE value**. By RubyPool's fee schedule, the rest is ORE's 10% refining fee plus RubyPool's 1.25%.
+- You can take out any time, up to what RubyPool can pay out right now. If you ask for more, the app offers the most it can.
+- A take-out can wait briefly, shown as submitted, while RubyPool syncs with an ORE round. It's sent as soon as RubyPool is ready. If it waits too long, see the [FAQ](/wallet/faq).
+
+pORE you win in the [weekly prize](/ore/weekly-prize) lands in your wallet, and you take it out the same way.

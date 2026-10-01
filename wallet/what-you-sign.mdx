@@ -1,0 +1,69 @@
+---
+title: "What you sign"
+description: "What your wallet signs, who pays the network fees, and who holds which key."
+icon: "signature"
+---
+
+You run your planet, and RHEA carries out your orders with your planet's own game key, even while the app is closed. So your wallet signs only when money moves, or to confirm where your planet's earnings go.
+
+## What your wallet signs
+
+Your wallet signs six things, each with one approval:
+
+| You sign | When |
+|---|---|
+| **Premium** | You buy 30 days for 20 USDC. |
+| **A mining pack** | You buy a small or big pack in USDC. Premium and a small pack can go together in one approval. |
+| **Supply Drops** | You roll drops. Paid drops cost SKR. |
+| **Take out ORE** | You turn pORE into ORE. |
+| **A prize claim** | You claim a weekly prize. |
+| **Your payout wallet** | You confirm it, once. You can confirm and claim a prize with one approval. |
+
+Signing in is different. Your wallet signs a message, not a transaction: it proves the wallet is yours and moves nothing.
+
+## What you never sign
+
+Claiming your planet is free and needs no wallet transaction. After that, RHEA signs every game move with your planet's game key:
+
+- training troops and upgrading;
+- attacking and defending;
+- collecting dust;
+- burning dust for the [weekly prize](/ore/weekly-prize);
+- using a fast-track token;
+- opening Supply Drops;
+- starting the simulation pack.
+
+That's why you never sign for a battle.
+
+## Who holds which key
+
+| Key | Held by | What it does |
+|---|---|---|
+| Your wallet | You | Pays for premium, packs and drops. Owns your RubyPool position. Claims prizes and takes out ORE. |
+| Your planet's game key | RHEA | Signs every game move. |
+| Your balance key | RHEA | Seals your dust balance, which is kept encrypted. |
+
+PANDOR stores both planet keys encrypted.
+
+## Your payout wallet
+
+Your payout wallet is the wallet your planet's earnings are bound to. It's set to the wallet you sign in with when you claim your planet.
+
+- Only it can buy mining packs or roll Supply Drops for your planet.
+- Your RubyPool position belongs to it.
+- It claims your weekly prizes.
+- It must hold your Seeker Genesis Token for the [Genesis perks](/seeker-genesis).
+
+Confirm it once, with **Confirm my payout wallet**. Until you confirm, PANDOR can still correct it. Once you confirm, it's locked, and PANDOR can no longer change it.
+
+## Who pays the fees
+
+**Game moves.** PANDOR pays. RHEA keeps your planet's game key topped up with a little SOL for its fees.
+
+**Wallet orders.** PANDOR usually pays the network fee, and the app says so: "PANDOR covers the network fee on this one, Commander." It covers up to 30 of your orders an hour, within a limit across all players. When it can't, your wallet pays the usual small network fee in SOL.
+
+**Account deposits.** On Solana, opening a new account takes a small deposit in SOL, which comes back when the account closes.
+
+- For the accounts your planet and wallet need, such as your pORE and ORE accounts, PANDOR pays the deposit if your wallet has almost no SOL. A wallet with SOL pays its own.
+- Your first mining pack opens your RubyPool accounts. That deposit, about 0.004 SOL, comes from your wallet and comes back when those accounts close. A wallet with no SOL can't buy a pack yet.
+- When PANDOR covers your planet's first Supply Drop roll, it also pays the deposit for your planet's drop record.

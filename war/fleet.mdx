@@ -1,0 +1,86 @@
+---
+title: "Fleet"
+description: "Your three troop types, their names for each species, their stats, training and upkeep."
+icon: "shuttle-space"
+---
+
+Every planet trains three kinds of troops: a raider, a heavy and a defender. What they're called depends on your planet's species.
+
+| Role | Terra | Ferox | Vex | Bastion |
+|---|---|---|---|---|
+| Raider | Falcon | Skirmisher | Wraith | Harrier |
+| Heavy | Titan | Dreadnought | Marauder | Juggernaut |
+| Defender | Aegis | Rampart | Ward | Bulwark |
+
+In the Hangar, each troop shows its name, its role and its price.
+
+## Stats
+
+The Hangar doesn't show these stats, so here they are.
+
+| Role | Cost (dust) | Upkeep per hour | Attack | Defence | Carry |
+|---|---:|---:|---:|---:|---:|
+| Raider | 200 | 10 | 25 | 12 | 40 |
+| Heavy | 350 | 30 | 55 | 28 | 45 |
+| Defender | 300 | 20 | 12 | 75 | 12 |
+
+- **Attack** counts when the troop is sent to attack.
+- **Defence** counts when your planet is attacked and the troop is at home. Every troop at home defends, not just defenders.
+- **Carry** is how much loot each surviving attacker brings home.
+
+Your species adjusts these. Troops from Ferox worlds attack 20% harder, and troops from Bastion worlds defend 25% harder. Vex fleets fly 25% faster. Terra's bonus is production, not troops.
+
+### Picking a mix
+
+- **Raiders** are the cheapest to keep, and carry the most loot for their price.
+- **Heavies** hit the hardest, per troop and per dust, but each eats 30 dust an hour.
+- **Defenders** hold your planet, with 75 defence each.
+
+For defence, don't forget your Bastion building. Its first level gives 500 defence for 1,000 dust and costs no upkeep. See [Upgrades](/planet/upgrades).
+
+## Training
+
+Train in the **Hangar**. You pay the full price up front, in dust.
+
+- The batch waits in the yard until it's ready. Troops in training can't attack or defend.
+- One batch at a time. The next can't start until the last one has joined your garrison.
+- When a batch is ready, it joins your garrison on its own, and you get a **Training done** alert.
+- The Hangar shows the training time after you order: "Ready in …". Use the table below to plan.
+
+Training takes about 6 seconds for each point of hourly upkeep in the batch. Bigger batches get a discount: each point of hourly upkeep takes 0.1% off the time, up to 50% off at 500 upkeep an hour, for example 50 raiders or 25 defenders.
+
+| Batch | Cost (dust) | Training time |
+|---|---:|---|
+| 1 raider | 200 | about 1 min |
+| 10 raiders | 2,000 | about 9 min |
+| 50 raiders | 10,000 | about 25 min |
+| 1 heavy | 350 | about 3 min |
+| 10 heavies | 3,500 | about 21 min |
+| 1 defender | 300 | about 2 min |
+| 10 defenders | 3,000 | about 16 min |
+| 50 defenders | 15,000 | about 50 min |
+
+## Upkeep
+
+Troops eat dust every hour, taken from your balance a little at a time: 10 for a raider, 30 for a heavy, 20 for a defender.
+
+- Upkeep starts the moment you pay, not when training finishes.
+- It keeps running while troops are away attacking.
+- It stops when troops die in battle.
+- Troops you send to reinforce a coalition-mate stay on your upkeep while they fly. Once they land, the host pays.
+
+| Garrison | Upkeep per hour |
+|---|---:|
+| 10 raiders | 100 |
+| 10 defenders | 200 |
+| 10 heavies | 300 |
+
+For scale: a Common planet at production level 1 makes 3,000 dust an hour while a pack runs.
+
+<Warning>
+Upkeep never stops. If your pack ends, or your troops eat more than you make, your balance falls and can go below zero. A planet in debt defends at half strength. See [Debt](/planet/dust#debt).
+</Warning>
+
+## Troops from Supply Drops
+
+15% of [Supply Drops](/ore/supply-drops) are troops: 3 to 10 of one role, picked at random, named for your species. They join your garrison at once and eat upkeep from then on. If your planet is in debt, you get their price in dust instead.

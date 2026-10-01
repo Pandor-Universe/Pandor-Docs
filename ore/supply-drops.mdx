@@ -1,0 +1,76 @@
+---
+title: "Supply Drops"
+description: "What a drop costs, what can be inside, and how each drop is opened."
+icon: "box-open"
+---
+
+**Supply Drops, the in-game gacha,** each hold one prize for your planet: dust, troops, a fast-track token or premium days. Drops hold in-game items only. They never contain tokens.
+
+## Price
+
+| | |
+|---|---|
+| Price | 20 SKR a drop |
+| Buy | **Roll ×1** or **Roll ×10** |
+| Paid by | Your planet's payout wallet, in SKR |
+| Needs premium | No |
+
+A roll of ten drops is still a single payment, and your SKR goes to the PANDOR treasury. Your planet can have one roll opening at a time. Roll again once it has opened.
+
+The price is set on chain, and a roll never charges more than the price the app shows. If the price ever changes, the app asks you to update before you roll again.
+
+If your payout wallet holds a Seeker Genesis Token, you get free drops, used before any SKR. See [Seeker Genesis](/seeker-genesis).
+
+## What's inside
+
+| Prize | Chance | You get | Card |
+|---|---:|---|---|
+| Dust | 60% | 500 dust | Common |
+| Dust | 17% | 5,000 dust | Uncommon |
+| Dust | 3% | 50,000 dust | Rare |
+| Troops | 15% | 3 to 10 troops of one type | Troops |
+| Fast-track token | 2.5% | 1 token | Rare |
+| Premium | 2.5% | 1 to 3 days | Rare · premium |
+
+The app shows these odds under **Odds on-chain**: they're stored on chain.
+
+### Dust
+
+Dust goes straight into your balance, not your tank. See [Dust](/planet/dust).
+
+### Troops
+
+You get 3 to 10 troops of one type: raider, heavy or defender, named for your planet's species. They join your garrison at once and pay upkeep from then on, like trained troops.
+
+| Species | Raider | Heavy | Defender |
+|---|---|---|---|
+| Terra | Falcon | Titan | Aegis |
+| Ferox | Skirmisher | Dreadnought | Rampart |
+| Vex | Wraith | Marauder | Ward |
+| Bastion | Harrier | Juggernaut | Bulwark |
+
+Upkeep is 10 dust an hour for a raider, 30 for a heavy and 20 for a defender. If your planet is insolvent, you get the troops' cost in dust instead: 200 dust per raider, 350 per heavy and 300 per defender. The card then says **Troops as dust**. See [Fleet](/war/fleet).
+
+### Fast-track token
+
+A fast-track token finishes your running upgrade at once. It's kept on chain until you use it. While an upgrade is building, the app offers **Finish now · 1 fast-track**, and RHEA spends the token with your planet's game key, with no wallet prompt. The offer goes away 15 seconds before the upgrade is due, so a token is never wasted on a finished build. See [Upgrades](/planet/upgrades).
+
+### Premium days
+
+One to three days, added on top of any premium you have. See [Premium](/ore/premium).
+
+## How a drop is decided
+
+ORE's own on-chain round result decides what's inside. Not you, and not PANDOR.
+
+1. You pay first.
+2. Your roll is tied to an ORE mining round that hasn't ended yet. When you pay, nobody knows that round's result.
+3. When the round ends, ORE's round result opens every drop in your roll. It's the same result that decides ORE's own payouts.
+
+Each drop's prize is worked out from that round result, your planet and the drop's number, so anyone can check it.
+
+## How long a drop takes
+
+A drop opens when its ORE round ends. Expect anything from under a minute to about a minute and a half. You can leave the screen: the result waits for you.
+
+Your wallet signs each roll. PANDOR usually covers the network fee, and the app tells you when it does. See [What you sign](/wallet/what-you-sign).
