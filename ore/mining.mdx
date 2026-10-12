@@ -40,7 +40,7 @@ The first three rows are for Ferox, Vex and Bastion. An hour is 60 times as much
 
 You run one simulation pack at a time. When it ends, tap **Restart simulation pack** for another seven days. It never restarts on its own.
 
-The screen also shows **SOL it plays as** and **pORE it would have mined**: a preview of what a real small pack would have mined. The simulation pack never pays it out.
+The screen also shows **It plays as**, a small pack's price, and **ORE it would have mined**: a preview of what a real small pack would have mined. The simulation pack never pays it out.
 
 ## Real mining packs
 
@@ -50,25 +50,26 @@ To buy a pack, your planet needs live [premium](/ore/premium), and your [payout 
 
 | Where the price goes | Share | Small pack | Big pack |
 |---|---:|---:|---:|
-| Swapped to SOL that mines for you | 80% | 16 USDC | 160 USDC |
+| Your own RubyPool deposit, which mines for you | 80% | 16 USDC | 160 USDC |
 | PANDOR treasury | 10% | 2 USDC | 20 USDC |
 | PANDOR's bonus wallet | 10% | 2 USDC | 20 USDC |
 
-The swap happens on chain at the market price, and the SOL lands in your own wallet.
-
-<Warning>
-Keep a little SOL in your wallet. Your first pack opens your RubyPool accounts, which take a deposit of about 0.004 SOL. It comes back when those accounts close. A wallet with no SOL can't buy a pack yet.
-</Warning>
-
-### Your SOL goes in over seven days
-
-The SOL then goes into your own RubyPool position in equal steps over seven days, so it mines all week. The number of steps depends on the SOL price. The app shows **N of M steps in** and **All in by**.
+Nothing is swapped when you buy. Your 80% stays USDC, in a RubyPool deposit in your wallet's name.
 
 <Note>
-Example only, from 30 September 2026, with SOL at about 118 USDC: a small pack went in as 84 steps, one every 2 hours. A big pack went in as 672 steps, one every 15 minutes.
+Your first pack also opens your RubyPool accounts, which take a deposit of about 0.007 SOL. If your wallet doesn't have it, PANDOR sends that SOL for you, once per wallet. Most of it comes back to your wallet when your deposit closes.
 </Note>
 
-The SOL is used up by mining. You don't get SOL back: you get pORE.
+### Your USDC goes in over seven days
+
+RubyPool takes your USDC in equal steps over seven days. It turns each step into SOL and puts it into your own position, so your pack mines all week. The app shows **Your USDC, going in**, with the size of each step and how much is still to go in.
+
+- A small pack goes in as 32 steps of 0.5 USDC, one every 5 h 15 min.
+- A big pack goes in as 320 steps of 0.5 USDC, one every 31 min 30 s.
+
+If you buy another pack while one is still going in, the USDC still waiting comes back to your wallet in the same purchase and joins the new pack's. It all goes in over a fresh seven days.
+
+Once it's in, it's used up by mining. You don't get the USDC back: you get pORE.
 
 ### What a real pack earns
 
