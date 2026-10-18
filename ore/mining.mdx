@@ -23,22 +23,22 @@ Under **Mine**, tap **Start simulation pack**. There's nothing to pay or sign: R
 
 It runs for seven days and pays **dust only, never ORE or pORE**, at your planet's normal production rate:
 
-> dust per minute = 10 × production level × species bonus × rarity bonus, rounded down
+> dust per minute = 25 × production level × species bonus × rarity bonus, rounded down
 
 The species bonus is 1.25 for Terra and 1 for the others. The rarity bonus is 1 for Common, 1.05 for Rare and 1.10 for Legendary.
 
 | Dust per minute | Level 1 | Level 5 | Level 10 | Level 20 |
 |---|---:|---:|---:|---:|
-| Common | 10 | 50 | 100 | 200 |
-| Rare | 10 | 52 | 105 | 210 |
-| Legendary | 11 | 55 | 110 | 220 |
-| Terra, Common | 12 | 62 | 125 | 250 |
-| Terra, Rare | 13 | 65 | 131 | 262 |
-| Terra, Legendary | 13 | 68 | 137 | 275 |
+| Common | 25 | 125 | 250 | 500 |
+| Rare | 26 | 131 | 262 | 525 |
+| Legendary | 27 | 137 | 275 | 550 |
+| Terra, Common | 31 | 156 | 312 | 625 |
+| Terra, Rare | 32 | 164 | 328 | 656 |
+| Terra, Legendary | 34 | 171 | 343 | 687 |
 
-The first three rows are for Ferox, Vex and Bastion. An hour is 60 times as much: 600 dust for a Common planet at level 1. To raise your level, see [Upgrades](/planet/upgrades).
+The first three rows are for Ferox, Vex and Bastion. An hour is 60 times as much: 1,500 dust for a Common planet at level 1. To raise your level, see [Upgrades](/planet/upgrades).
 
-You run one simulation pack at a time. When it ends, tap **Restart simulation pack** for another seven days. It never restarts on its own.
+You run one simulation pack at a time. It renews itself every seven days, so you only start it once.
 
 The screen also shows **It plays as**, a small pack's price, and **ORE it would have mined**: a preview of what a real small pack would have mined. The simulation pack never pays it out.
 
@@ -74,8 +74,21 @@ Once it's in, it's used up by mining. You don't get the USDC back: you get pORE.
 ### What a real pack earns
 
 - **pORE, in your wallet's name.** Your position belongs to your payout wallet, and only that wallet can take out what it earns.
-- **Dust from pORE.** 19,000,000 dust for each ORE's worth of pORE your packs mine, plus 20% for each production level above 1. This is most of the dust a real pack earns.
+- **Dust from pORE.** 13,300,000 dust for each ORE's worth of pORE your packs mine, plus 20% for each production level above 1. This is most of the dust a real pack earns.
 - **The base rate.** While a real pack runs, your planet makes the same dust per minute as the simulation pack. You never get two base rates at once.
+
+### In numbers
+
+Dust per hour for a Common planet, as a projection:
+
+| Level | Simulation pack (free) | One small pack | One big pack |
+|---:|---:|---:|---:|
+| 1 | 1,500 | about 9,500 | about 81,000 |
+| 5 | 7,500 | about 22,000 | about 151,000 |
+| 10 | 15,000 | about 37,000 | about 238,000 |
+| 20 | 30,000 | about 68,000 | about 413,000 |
+
+The free column is exact. The pack columns are estimates: they assume a small pack mines about 0.0006 ORE an hour and a big pack ten times that, close to RubyPool's recent rate. What a pack really mines changes with ORE's rounds, so your numbers will move around these. Terra, Rare and Legendary planets earn more on the base rate (see the table above); the dust from mining is the same for every species and rarity.
 
 ## Take out ORE
 
