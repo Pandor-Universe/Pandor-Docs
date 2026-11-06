@@ -36,7 +36,7 @@ An even assault wipes out both sides. Losses round up for each troop type, again
 
 ## Sending an attack
 
-1. On the **Galaxy chart**, tap a rival world.
+1. On the **Galaxy chart**, tap a rival world. **Find a world** finds one by name.
 2. Choose **Raid** or **Assault**, and the troops to send. At least one.
 3. Confirm. An attack costs no dust.
 
@@ -97,28 +97,29 @@ For example, 10 raiders bring 250 attack, or 300 from a Ferox world. Against a l
 Defence is automatic and free. When an attack lands on your planet, RHEA defends with every troop at home, plus your Bastion building's flat 500 per level. You don't need the app open. Troops that are away, or still in training, don't defend.
 
 <Warning>
-RHEA's free auto-defence declares your exact garrison for that battle. Anyone reading Solana can see your troop counts, and so can the attacker's report if any of their troops come home. Coalition-mates' troops stationed on your planet are declared too, and they take the same share of losses as yours.
+RHEA's free auto-defence declares your exact garrison for that battle. Anyone reading the chain can see your troop counts, and so can the attacker's report if any of their troops come home. Coalition-mates' troops stationed on your planet are declared too, and they take the same share of losses as yours.
 </Warning>
 
 To make your planet a harder target:
 
 - **Raise your Bastion building.** Each level adds a flat 500 defence, even with nobody home, and it costs no upkeep.
 - **Keep a garrison of defenders.** They bring 75 defence each, and every other troop at home adds its defence too.
-- **Collect often.** Raids take from your tank first, and anyone can see what's in it.
-- **Stay out of debt.** A planet in debt defends at half strength.
+- **Spend what you earn.** Dust you've spent on troops and upgrades can't be looted.
+- **Stay out of debt.** A planet in debt defends at half strength, and its cheapest troops starve.
 
 ## Loot
 
 When an attack wins, every surviving attacker carries loot: 40 dust for a raider, 45 for a heavy, 12 for a defender.
 
-- Loot comes from the defender's tank first, then from their balance.
+- Loot comes from the defender's balance. Their tank moves into it before the raid lands, so dust in the tank counts.
+- A planet below zero has nothing to take.
 - Attacks that land together pool their carry, and split the loot by how much each carried.
 - A lost attack takes nothing.
 - Loot joins the attacker's balance when their survivors land at home.
 
 For example, 20 raiders that survive a winning raid carry up to 800 dust.
 
-RHEA also answers for your balance when you're raided. If your balance covers the raid, she confirms it without revealing the amount. If it doesn't, she reveals your exact balance, and raiders can't take more than you have. If neither answer reaches Solana in time, raiders take their full load, even if that pushes your balance below zero. A planet emptied by a raid still pays upkeep, so it can slide into debt.
+RHEA also answers for your balance when you're raided. If your balance covers the raid, she confirms it without revealing the amount. If it doesn't, she reveals your exact balance, and raiders can't take more than you have. If no answer arrives in time, raiders take nothing. A planet emptied by a raid still pays upkeep, so it can slide into debt.
 
 ## Combined attacks
 
@@ -150,19 +151,20 @@ What you learn about the other side depends on your role and on what happened:
 Read reports with this in mind:
 
 - **"Held the field" doesn't mean you won.** For an attacker, it means some of your troops came home, even from a lost raid. For a defender, it means some of your troops are still standing, even if you were looted.
-- **Both sides are named in your own species' names.** If you're Terra, an enemy raider shows as a Falcon, whatever its species. Read them as roles: raider, heavy, defender.
+- **Each side's troops carry their own species' names.** A Wraith is a Vex raider, whatever species you are. [Fleet](/war/fleet) lists them all.
 - **On a defender's report, the loot line is dust taken from you.**
 
 ## What's public
 
 In the app, a rival world shows only its name, its distance and its production level. Only a battle shows what it holds.
 
-On Solana, anyone can read:
+The game runs on MagicBlock's rollup, which is public and syncs back to Solana mainnet. On chain, anyone can read:
 
 - that an attack exists, where it came from, its target, its mode and its timing;
 - the attacking army, once it lands;
 - the defending garrison, when RHEA declares it;
 - loot, and the survivors flying home;
-- every planet's levels, tank and total upkeep.
+- every planet's levels, tank and total upkeep;
+- the ORE your packs mine.
 
-Your balance and troop counts stay encrypted until a battle reveals them.
+Your balance and troop counts stay encrypted until a battle reveals them. Troops stationed with an ally stay between you and that ally until a battle declares them.

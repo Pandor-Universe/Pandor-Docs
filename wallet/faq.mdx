@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-description: "Short answers about mining, the weekly prize, Supply Drops, premium and your wallet."
+description: "Short answers about mining, the weekly prize, Supply Drops, premium, war and your wallet."
 icon: "circle-question"
 ---
 
@@ -8,7 +8,7 @@ icon: "circle-question"
 
 <AccordionGroup>
   <Accordion title="Do I need crypto to play?">
-    No. Claiming a planet is free, and so is playing: training, upgrading, raiding, automatic defence, collecting dust and the simulation pack. You only need crypto for premium and mining packs, paid in USDC, and for Supply Drops, paid in SKR, unless you have free [Seeker Genesis](/seeker-genesis) drops.
+    No. Claiming a planet is free, and so is playing: training, upgrading, raiding, automatic defence, collecting dust and the simulation pack. You only need crypto for premium and mining packs, paid in USDC or SOL, and for Supply Drops, paid in SKR, unless you have free [Seeker Genesis](/seeker-genesis) drops.
   </Accordion>
   <Accordion title="Which tokens does PANDOR use?">
 
@@ -16,14 +16,17 @@ icon: "circle-question"
     |---|---|
     | USDC | Premium and mining packs |
     | SKR | Supply Drops |
-    | SOL | A small deposit for your first mining pack, and any network fee PANDOR doesn't cover |
+    | SOL | Covers what you're short of USDC, a small deposit for your first mining pack, and any network fee PANDOR doesn't cover |
     | ORE | What real mining packs mine, and what the weekly prize pays |
 
     Dust is your planet's in-game resource, not a token. See [Dust](/planet/dust).
 
   </Accordion>
   <Accordion title="Do I need SOL?">
-    Not to play. PANDOR pays the fees for your game moves, and usually for your wallet orders too. Your first mining pack needs about 0.007 SOL for RubyPool's account deposit. If your wallet doesn't have it, PANDOR sends it once.
+    Not to play. PANDOR pays the fees for your game moves, and usually for your wallet orders too. Your first mining pack needs about 0.007 SOL for RubyPool's account deposit. If your wallet doesn't have it, PANDOR sends it once. If you hold SOL but not enough USDC, your SOL can cover the rest of a purchase.
+  </Accordion>
+  <Accordion title="Where does the game run?">
+    Training, upgrades, raids and spending dust run on MagicBlock's Ephemeral Rollup, which syncs back to Solana mainnet. Your planet NFT, every payment, ORE mining and the weekly prize are on Solana mainnet. See [Welcome](/#where-the-game-runs).
   </Accordion>
 </AccordionGroup>
 
@@ -40,18 +43,18 @@ icon: "circle-question"
     No. A pack's USDC goes into RubyPool a step at a time, is turned into SOL and is used up by mining. What you get is the ORE it mines, which you can take out.
   </Accordion>
   <Accordion title="Where is the ORE my packs mine?">
-    It builds up in your RubyPool position, in your payout wallet's name. The app shows it under **Mine** as **Worth in ORE**. Take it out under **Mine**, and you get 88.75% of its ORE value.
+    It builds up in your RubyPool position, in your payout wallet's name. The app shows it under **Mine** as **Worth in ORE**. Tap **Redeem ORE** under **Mine**, and you get 88.75% of its ORE value.
   </Accordion>
   <Accordion title="Why was my pack refused?">
     One of these is the usual reason:
 
     - Your planet has no live [premium](/ore/premium).
     - You're not signed in with your planet's payout wallet.
-    - Your wallet doesn't hold enough USDC.
+    - Your wallet doesn't hold enough USDC, or enough SOL to cover the rest.
     - The pack's price changed before your purchase landed. Nothing was charged. Try again.
     - Mining packs are paused for a moment, usually while RubyPool isn't answering. Try again shortly.
 
-    When a purchase is refused, your USDC stays in your wallet.
+    When a purchase is refused, your money stays in your wallet.
   </Accordion>
   <Accordion title="Can I buy another pack while one is running?">
     Yes. The two merge: the USDC still waiting to go in comes back to your wallet in the same purchase and joins the new pack's, and it all goes in over a fresh seven days.
@@ -97,7 +100,7 @@ icon: "circle-question"
     The drop price on chain has changed. Update the app to roll again. A roll never charges more than the price the app shows.
   </Accordion>
   <Accordion title="Why did I get troops as dust?">
-    Your planet was insolvent, so you got the troops' cost in dust instead: 200 dust per raider, 350 per heavy and 300 per defender.
+    Your planet was in debt, so you got the troops' cost in dust instead: 200 dust per raider, 350 per heavy and 300 per defender.
   </Accordion>
 </AccordionGroup>
 
@@ -109,6 +112,20 @@ icon: "circle-question"
   </Accordion>
   <Accordion title="Do I need premium to take out ORE or claim a prize?">
     No. Premium gates buying mining packs, burning dust, the auto queue and the campaign planner. Taking out ORE and claiming a prize you've won don't need it.
+  </Accordion>
+</AccordionGroup>
+
+## Fleet and war
+
+<AccordionGroup>
+  <Accordion title="My troops died and nobody attacked. Why?">
+    They starved. When upkeep outruns what your planet makes, your balance falls below zero. Within the hour your tank pays what it can, then your cheapest troops die until your balance is back at 0. See [Debt](/planet/dust#debt).
+  </Accordion>
+  <Accordion title="Does collecting protect my dust from raids?">
+    No. Your tank moves into your balance before a raid lands, so a winning raid can take that dust either way. Collecting only keeps the amount out of public view. Dust you've spent can't be looted. See [Loot](/war/raids#loot).
+  </Accordion>
+  <Accordion title="Can I get my reinforcements back?">
+    Yes. Tap **Send home** under **Stationed troops** on the Coalition deck. The ally holding them can send them home too. See [Reinforcements](/war/coalitions#reinforcements).
   </Accordion>
 </AccordionGroup>
 
@@ -138,7 +155,7 @@ icon: "circle-question"
   <Accordion title="How do I get more free drops?">
     Each new round tops your planet back up to 10 free drops. Rounds aren't on a timer: PANDOR opens them.
   </Accordion>
-  <Accordion title="When do referrals start?">
-    In the next app update. See [Referrals](/ore/referrals).
+  <Accordion title="How do referrals work?">
+    A new player enters your invite code within 7 days of claiming a planet, and you both get 3 Supply Drops and 3 days of premium. See [Referrals](/ore/referrals).
   </Accordion>
 </AccordionGroup>

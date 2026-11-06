@@ -49,6 +49,18 @@ Train in the **Hangar**. You pay the full price up front, in dust.
 
 Training takes about 1 minute for each point of hourly upkeep in the batch. Bigger batches get a discount: each point of hourly upkeep takes 1% off the time, up to 50% off at 50 upkeep an hour, for example 50 raiders or 25 defenders.
 
+Your Dust Reactor speeds it up too, in even steps from level 1 to level 20. With the batch discount on top, a full batch at level 20 takes 5% of the base time.
+
+| Production level | Training time |
+|---:|---:|
+| 1 | 100% |
+| 5 | about 81% |
+| 10 | about 57% |
+| 15 | about 34% |
+| 20 | 10% |
+
+Times at production level 1:
+
 | Batch | Cost (dust) | Training time |
 |---|---:|---|
 | 1 raider | 200 | about 1 min |
@@ -66,8 +78,8 @@ Troops eat dust every hour, taken from your balance a little at a time: 1 for a 
 
 - Upkeep starts the moment you pay, not when training finishes.
 - It keeps running while troops are away attacking.
-- It stops when troops die in battle.
-- Troops you send to reinforce a coalition-mate stay on your upkeep while they fly. Once they land, the host pays.
+- It stops when troops die in battle or starve.
+- Troops you send to reinforce a coalition-mate stay on your upkeep while they fly. Once they land, the host pays. If they're sent home, their upkeep is yours again.
 
 | Garrison | Upkeep per hour |
 |---|---:|
@@ -78,7 +90,7 @@ Troops eat dust every hour, taken from your balance a little at a time: 1 for a 
 For scale: a Common planet at production level 1 makes 1,500 dust an hour while a pack runs, plus the dust from the ORE a real pack mines.
 
 <Warning>
-Upkeep never stops. If your pack ends, or your troops eat more than you make, your balance falls and can go below zero. A planet in debt defends at half strength. See [Debt](/planet/dust#debt).
+Upkeep never stops. If your pack ends, or your troops eat more than you make, your balance falls and can go below zero. A planet in debt defends at half strength, and within the hour its cheapest troops starve until it's back at zero. See [Debt](/planet/dust#debt).
 </Warning>
 
 ## Troops from Supply Drops

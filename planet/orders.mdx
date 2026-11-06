@@ -19,8 +19,9 @@ Anyone can give these. Some cost dust.
 | Train troops | Hangar | Costs dust. One batch at a time. See [Fleet](/war/fleet). |
 | Raid or Assault a rival world | Galaxy chart | No dust. Leaves about 90 seconds after you order. See [Raids](/war/raids). |
 | Reinforce a coalition-mate | Galaxy chart | The host pays their upkeep once they land. See [Coalitions](/war/coalitions). |
-| Start a coalition, ask to join, withdraw a request, approve, remove a member, leave | Coalition deck | Starting one needs production level 5. |
-| Start or restart the simulation pack | Mine | 7 days of dust. See [Dust](/planet/dust). |
+| Send home | Coalition deck | Your troops from an ally, or an ally's troops from your world. See [Reinforcements](/war/coalitions#reinforcements). |
+| Start a coalition, ask to join, withdraw a request, approve, decline, remove a member, leave | Coalition deck | Starting one needs production level 5. |
+| Start the simulation pack | Planet deck or Mine | 7 days of dust, then it renews itself. See [Dust](/planet/dust). |
 | Collect | Dust screen, from Settings | Moves tank dust into your balance. |
 | Clear it (your debt) | Planet deck | Once you're back above zero. |
 | Finish now · 1 fast-track | Planet deck or Supply Drop | Spends one Fast-track token. |
@@ -36,6 +37,7 @@ These need [premium](/ore/premium).
 | Burn dust | Weekly prize | Tank first, then balance. See [Weekly prize](/ore/weekly-prize). |
 | Auto queue | Queue | Line up training and upgrades. |
 | Campaign planner | Campaign | Strikes where several fleets land together. See [Coalitions](/war/coalitions). |
+| Ask RHEA anything, and give her orders | Chat head | See [Ask RHEA](#ask-rhea). |
 
 ### The auto queue
 
@@ -51,10 +53,10 @@ Your wallet signs these, because money moves or your payout wallet is involved. 
 
 | Order | Paid in |
 |---|---|
-| **Go premium** or **Add thirty days** | 20 USDC |
-| **Buy small pack** or **Buy big pack** (needs premium, or buy both together) | 20 or 200 USDC |
-| **Roll ×1** or **Roll ×10** on a Supply Drop | 20 SKR a drop, free drops first |
-| **Take out ORE** | Nothing |
+| **Go premium** or **Add thirty days** | 20 USDC. SOL can cover what you're short. |
+| **Buy small pack** or **Buy big pack** (needs premium, or buy both together) | 20 or 200 USDC. SOL can cover what you're short. |
+| **Open** on a Supply Drop | 20 SKR a drop, free drops first |
+| **Redeem ORE** | Nothing |
 | Claim a weekly prize, or **Confirm my payout wallet** | Nothing |
 
 When PANDOR covers the network fee, the app tells you: "PANDOR covers the network fee on this one, Commander."
@@ -68,12 +70,13 @@ These run all the time, for free, whether or not the app is open. She checks abo
 - **Finishes your training and upgrades** the moment they're ready.
 - **Takes in reinforcements** that coalition-mates send you.
 - **Credits your pack's dust** to your tank, about once an hour.
-- **Collects your tank** as the first step of any order that spends dust.
+- **Collects your tank** as the first step of any order that spends dust or sends an attack, and before a raid's loot is taken.
+- **Restarts your simulation pack** when its seven days end.
 - **Clears your debt flag** once your balance is back above zero.
+- **Settles a debt that won't clear,** about once an hour: your tank pays first, then your cheapest troops starve. See [Debt](/planet/dust#debt).
 
 She won't, on her own:
 
-- restart your simulation pack when it ends;
 - collect your tank on a timer;
 - train, build or attack without your order. The auto queue and the campaign planner are your orders, given ahead of time.
 
@@ -84,7 +87,44 @@ She won't, on her own:
 | **Incoming attack** | "From *their world*, landing on *your world* in 3 min." | War Room |
 | **Upgrade done** | "Dust Reactor is at level 3." | Planet deck |
 | **Training done** | "10 troops built. They fold into your garrison next." | Planet deck |
+| **Request to join** | "*Their world* asks to join *your coalition*, Commander." | Coalition deck |
+| **Troops sent home** | Your stationed troops are on their way back. | War Room |
+| **Troops starved** or **Debt cleared** | "Commander, 88 raiders starved to cover upkeep." | Planet deck |
+| **A friend joined** | Your [referral](/ore/referrals) reward has landed. | Planet deck |
 
-- An attack alert goes out at once, on the Android channel "Incoming attacks". Upgrade and training alerts use the channel "Upgrades and training". There are no other switches, so to silence one kind, turn its channel off in Android settings.
+- An attack alert goes out at once, on the Android channel "Incoming attacks". Every other alert uses the channel "Upgrades and training". There are no other switches, so to silence one kind, turn its channel off in Android settings.
 - Each alert is sent once. An alert running more than 15 minutes late is dropped, and so is an attack alert once the attack has landed.
-- Check Settings to see which alerts you get. It says either "On. I ping you for upgrades, training and inbound attacks." or "On for upgrades and training. Attack alerts aren't live yet."
+- Check Settings to see whether alerts are on.
+
+## Ask RHEA
+
+RHEA's chat head sits on your screen. Tap it to talk to her.
+
+- **Anyone** can tap her common questions and get an answer.
+- **With [premium](/ore/premium),** you can type anything, and give her orders by chat. She shows you a card to confirm before she acts. Her energy for the day resets at 00:00 UTC.
+- She also speaks up when something happens to your planet. Her answers often end in **Show me**, which takes you to the right place.
+
+Her view is the same as yours. She can't tell you what a rival is holding.
+
+## Discord
+
+[PANDOR Discord](https://discord.gg/uHFvpzUUPr) is where Commanders talk. Link your planet and your coalition gets its own private channel there.
+
+<Steps>
+  <Step title="Join the server">
+    On the **Join PANDOR Discord** card on your Planet deck, tap **Discord**. You'll also find it in Settings, under Discord.
+  </Step>
+  <Step title="Get your link code">
+    Tap **Get code**. It's copied for you, and it works for 15 minutes.
+  </Step>
+  <Step title="Link in Discord">
+    In Discord, type `/link` and paste your code.
+  </Step>
+</Steps>
+
+Linking needs no wallet and no signature, and each planet links to one Discord account. Unlinking removes your PANDOR roles.
+
+- **Roles.** You get roles for your species, your rarity, premium, Seeker Genesis and your coalition. They sync about every 15 minutes.
+- **What Discord shows.** Only what's already public in the game. Never your troops, your dust or your battle reports.
+- **Talk to RHEA.** Use `/rhea` or send her a DM. Typing your own questions with `/rhea ask:` needs premium.
+- **Alerts by DM.** With premium, ask RHEA to turn on alerts and she sends them to your Discord DMs too, including a note when a battle report is filed. Ask her to narrow them or turn them off at any time.

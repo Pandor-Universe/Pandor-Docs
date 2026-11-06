@@ -42,8 +42,8 @@ Your dust sits in two places.
 | | In the tank | Your balance |
 |---|---|---|
 | What lands there | Dust from your packs | Collected dust, loot, Supply Drop dust |
-| Who can see it | Anyone: it's public on Solana | Other players can't: it's encrypted |
-| When you're raided | Taken first | Taken once the tank is empty |
+| Who can see it | Anyone: it's public on chain | Other players can't: it's encrypted |
+| When you're raided | Moved into your balance before the raid lands | Where a winning raid takes its loot |
 | When you spend | Collected first, automatically | Spent from here |
 
 Pack dust reaches your tank about once an hour, and right away before you spend or burn dust. The tank holds about 3 billion dust, so in practice it never fills.
@@ -55,9 +55,11 @@ The **Dust** figure at the top of the app is everything together: your balance, 
 Collecting moves dust from your tank into your balance. It's free, and your wallet never signs. It happens in two ways:
 
 - **Collect.** Open Settings, then the Dust screen ("Your tank, and collecting it."), and tap **Collect**.
-- **Automatically, when you spend.** Every order that spends dust (training, upgrades, clearing a debt) collects your tank first.
+- **Automatically, when you act.** Every order that spends dust (training, upgrades, clearing a debt) and every attack you send collects your tank first.
 
-There's no timer. Dust stays in the tank until you spend or collect. **Collect often:** raids take from the tank first, and anyone can see what's in it.
+There's no timer. Dust stays in the tank until you spend, collect, or a raid lands on you.
+
+Collecting doesn't protect dust from raids, because your tank moves into your balance before a raid lands anyway. What it does change is who can see it: anyone can read what's in your tank, but your balance is encrypted.
 
 ## What dust pays for
 
@@ -69,7 +71,7 @@ There's no timer. Dust stays in the tank until you spend or collect. **Collect o
 | Burning | Premium only. **Burn dust** for the [weekly prize](/ore/weekly-prize): the tank first, then your balance. Burned dust is gone for good. |
 | Loot | What raiders carry off when they beat your defence |
 
-Premium, mining packs and Supply Drops are paid from your wallet in USDC or SKR, never in dust.
+Premium, mining packs and Supply Drops are paid from your wallet in USDC, SOL or SKR, never in dust.
 
 ## Where dust comes from
 
@@ -85,16 +87,26 @@ Every troop eats dust every hour: 1 for a raider, 3 for a heavy, 2 for a defende
 
 - It starts the moment you pay for troops, not when they finish training.
 - It keeps running while troops are away attacking.
-- It stops when troops die in battle.
+- It stops when troops die in battle or starve.
 
 Ten defenders cost 20 dust an hour. Check the **Upkeep** figure before you train a big batch. More on [Fleet](/war/fleet).
 
 ## Debt
 
-Upkeep can push your balance below zero, and so can a raid that goes unanswered (see [Loot](/war/raids#loot)). Nothing dies when that happens. But once your balance and tank together are below zero, your planet can be flagged as in debt, shown as **Owed**. While it's flagged:
+Upkeep can push your balance below zero. A raid can't: it never takes more than your balance holds (see [Loot](/war/raids#loot)). Once your balance and tank together are below zero, your planet can be flagged as in debt, shown as **Owed**. While it's flagged:
 
 - you can't upgrade, train, attack, reinforce, or burn dust from your balance;
 - your planet defends at **half strength**;
 - Supply Drop troops arrive as their price in dust instead.
 
-To clear it, get back above zero: keep your pack running, and loot and Supply Drop dust count too. RHEA clears the flag on her own once your balance is back above zero, or you can tap **Clear it** on the Planet deck. The pill then reads **Stable**.
+Debt doesn't last. If your production, loot or Supply Drop dust bring you back above zero, RHEA clears the flag on her own, or you can tap **Clear it** on the Planet deck. The pill then reads **Stable**.
+
+<Warning>
+If upkeep keeps outrunning production, your troops pay for it. Within the hour, RHEA settles the debt:
+</Warning>
+
+1. **Your tank pays first.** If that covers it, the flag clears and no troop dies.
+2. **Then your cheapest troops starve:** raiders first, then defenders, then heavies. Each one pays its training price: 200, 300 or 350 dust. Only enough die to bring your balance back to exactly 0.
+3. **If your whole garrison can't cover it,** every troop at home starves and your balance becomes 0. Stationed troops go home first: allies' troops on your planet fly home alive, and your troops with allies are called back. Troops in training or on the way home starve once they're back.
+
+You get a **Troops starved** alert. Your dust then starts again from 0. The army settles at a size your planet can feed, so check **Upkeep** against **Production** before you train.
